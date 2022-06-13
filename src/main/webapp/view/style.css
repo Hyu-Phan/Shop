@@ -1,0 +1,731 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dieu-huong {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.dieu-huong .cot-2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.noi-dung {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.hang {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cot-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.cot-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.cot-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+.dau_trang {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.dau_trang .hang {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.cot-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.cot-3 img {
+    width: 100%;
+}
+
+.noi-dung-nho {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.cot-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.cot-4 img {
+    width: 100%;
+}
+
+.tieu-de {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.tieu-de::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.cot-4 p {
+    font-size: 14px;
+}
+
+.xep-hang .fa {
+    color: #ff523b;
+}
+
+.cot-4:hover {
+    transform: translateY(-5px);
+}
+
+#danh-sach a:hover {
+    color: #ff523b;
+}
+
+/*---------------Offer----------------*/
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin: 80px;
+    padding: 30px 0;
+}
+
+small {
+    color: #555;
+}
+
+.dau-trang-img {
+    width: -webkit-fill-available;
+}
+
+/* -------------------chung-nhan----------------- */
+.chung-nhan {
+    padding-top: 100px;
+}
+
+.chung-nhan .cot-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1); /* Kích thước shadow và màu shadow */
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.chung-nhan .cot-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.chung-nhan .cot-3:hover {
+    transform: translateY(-10px);
+}
+
+.fa.fa-quote-left { /* Dấu phẩy đỏ */
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.cot-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.chung-nhan .cot-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/* ----------------------nhan-hieu------------------- */
+.nhan-hieu {
+    margin: 100px auto;
+}
+
+.cot-5 {
+    width: 160px;
+}
+
+.cot-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%); /* Lọc xám 100% ảnh từ ảnh màu thành đen trắng*/
+}
+
+.cot-5:hover img {
+    filter: grayscale(0); /* Bỏ lọc xám */
+}
+
+/* ----------------------cuoi-trang------------------ */
+.cuoi-trang {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+cuoi-trang p {
+    color: #000;
+}
+
+cuoi-trang h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cuoi-trang-cot-1, .cuoi-trang-cot-2, .cuoi-trang-cot-3, .cuoi-trang-cot-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.cuoi-trang-cot-1 {
+    flex-basis: 30%;
+}
+
+.cuoi-trang-cot-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.cuoi-trang-cot-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.cuoi-trang-cot-3, .cuoi-trang-cot-4 {
+    flex-basis: 12%;
+    text-align: left;
+    margin: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.cuoi-trang hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.ban-quyen {
+    text-align: center;
+}
+
+.danh-sach-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* ------------ All products page ------------ */
+.hang-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    background: #ff523b;
+    color: #fff;
+}
+
+/* -----------------Single product----------- */
+
+.san-pham {
+    margin-top: 80px;
+}
+
+.san-pham .cot-2 img {
+    padding: 0;
+}
+
+.san-pham .cot-2 {
+    padding: 20px;
+}
+
+.san-pham h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.san-pham.select {
+    display: flex;
+}
+
+.san-pham.select-size {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 16px;
+}
+
+.san-pham input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus {
+    outline: none;
+}
+
+.san-pham .fa {
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-hang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-cot {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.hang-2 .xemthem {
+    cursor: pointer;
+}
+
+/* ----------cart items---------- */
+.tieu-de-cart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-page {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thong-tin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    accent-color: #ff523b;
+}
+
+td a {
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+td button {
+    width: 16px;
+    margin: 0 4px;
+}
+
+td button a {
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+.tong-gia {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tong-gia table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+.tong-gia td:last-child {
+    text-align: right;
+}
+
+.tong-gia input {
+    text-align: right;
+    width: 100px;
+    border-style: hidden;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+th:first-child {
+    text-align: left;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+.dat-hang {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dat-hang input {
+    border: 1px solid;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #ff523b;
+    margin-top: 16px;
+    padding: 8px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* --------------account page------------- */
+.account-page {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.form-noi-dung {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-noi-dung span {
+    font-weight: bold;
+    padding: 0 5px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-noi-dung form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 0.5s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#dang-nhap {
+    left: -300px;
+}
+
+#dang-ky {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#huong-dan {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 0.5s;
+}
+
+
+/* ---------------media query for menu----------------- */
+@media only screen and (max-width: 800px) {
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .danh-sach-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* ----------------media query for less than 600 screen size--------------- */
+@media only screen and (max-width: 600px) {
+    .hang {
+        text-align: center;
+    }
+
+    .cot-2, .cot-3, .cot-4 {
+        flex-basis: 100%;
+    }
+
+    .san-pham .hang {
+        text-align: left;
+    }
+
+    .san-pham .cot-2 {
+        padding: 20px 0;
+    }
+
+    .san-pham h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .thong-tin p {
+        display: none;
+    }
+
+    .cot-5 img {
+        width: 60%;
+        filter: none; /*Bỏ lọc màu logo*/
+    }
+}
+
+/*------------------------About---------------*/
+.about {
+}
+
+.about h1 {
+    color: rgb(247, 47, 47);
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    text-align: center;
+    padding: 2%;
+}
+
+.about p {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    font-size: 20pt;
+    font-family: "Beau Rivage";
+    line-height: 35pt;
+}
+
+.ve-chung-toi {
+    margin: 2%;
+    background-image: url("images/ve-chung-toi.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.tam-nhin {
+    margin: 2%;
+    background-image: url("images/tam-nhin.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.su-menh {
+    margin: 2%;
+    background-image: url("images/su-menh.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.gia-tri-cot-loi {
+    margin: 2%;
+    background-image: url("images/gia-tri-cot-loi.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/*------------------------End-About---------------*/
